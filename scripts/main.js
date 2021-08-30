@@ -23,7 +23,7 @@ amogusPic.onclick = function() {
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 function updateHeader(name) {
-    if (!name) {
+    if (!name || name == "null") {
         myHeading.textContent = "Amogus Pics";
     } else {
         myHeading.textContent = "Amogus Pics for " + name;
